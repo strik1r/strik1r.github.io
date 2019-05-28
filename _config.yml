@@ -1,0 +1,65 @@
+#-------------------------------
+# General Site Settings
+
+title: Red Team Zone
+description: Red Team Zone is a informational blog for people in cyber security, we write articles covering variety of topics such as Red Team, Blue Team, Pentesting Methodologies etc. Come for the hacks stay for the hacks. # this means to ignore newlines until "baseurl:"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://redteamzone.com/" # the base hostname & protocol for your site, e.g. http://example.com
+logo: "/img/Logo.png"
+
+#-------------------------------
+# About Section
+
+
+#-------------------------------
+# Contact links
+
+
+#-------------------------------
+# Comment Section (Disqus)
+disqus-identifier: Strik1r # Add your shortname for Disqus Comment. For example mr-brown
+
+
+#-------------------------------
+# Instagram Feed
+instafeed: false # To enable the instafeed, use the value true. To turn off use the value false.
+
+
+#-------------------------------
+# Google Analytics
+google-analytics: UA-140422214-1 # Add your identifier. For example UA-99631805-1.
+
+
+#-------------------------------
+# Newsletter
+
+
+#-------------------------------
+# Build settings
+markdown: kramdown
+permalink: ':title/'
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+paginate: 7
+paginate_path: "/page/:num"
+
+include:
+  - _pages
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+
+#-------------------------------
+# Exclude from processing.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
